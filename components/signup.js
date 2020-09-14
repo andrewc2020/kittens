@@ -2,7 +2,7 @@ import React from 'react';
 import useSignUpForm from './CustomHooks';
 const Signup = () => {
   
-  const {inputs, handleInputChange, isSubmitting} = useSignUpForm(Signup);
+  const {inputs, handleInputChange, handleSubmit} = useSignUpForm(Signup);
   
   // alert(`User Created!
   // Name: ${inputs.firstName} ${inputs.lastName}
@@ -11,7 +11,7 @@ const Signup = () => {
   
   
   
-  return <form  method="POST" action="api/contact">
+  return <form  onSubmit={handleSubmit} >
   <div>
     <label>First Name</label>
     <input type="text" name="firstName" onChange={handleInputChange} value={inputs.firstName} required />
@@ -30,7 +30,7 @@ const Signup = () => {
     <label>Re-enter Password</label>
     <input type="password" name="password2" onChange={handleInputChange} value={inputs.password2}/>
   </div>
-  <button type="submit" disabled={isSubmitting} >Sign Up</button>
+  <button type="submit"  >Sign Up</button>
 </form>
 }
 export default Signup;
