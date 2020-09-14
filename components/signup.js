@@ -4,9 +4,7 @@ const Signup = () => {
   
   const {inputs, handleInputChange, handleSubmit} = useSignUpForm(Signup);
   
-  // alert(`User Created!
-  // Name: ${inputs.firstName} ${inputs.lastName}
-  // Email: ${inputs.email}`);     
+   
           
   
   
