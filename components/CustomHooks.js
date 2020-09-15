@@ -1,7 +1,9 @@
 
 import React, {useState} from 'react';
+
 const useSignUpForm = (callback) => {
     const [inputs, setInputs] = useState({});
+    const [Submitted, setSubmitted] = useState(false);
    
     
   const handleSubmit = (event) => {
@@ -12,16 +14,13 @@ const useSignUpForm = (callback) => {
       fetch('api/contact', {
         method: 'POST', // or 'PUT'
         headers: {
+          'Accept': 'application/json, text/plain, */*',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
       }
-      ).then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
+      ).then((res) => {
+        res.status === 200 ? setSubmitted(true) : ''
       })
     }
 
@@ -37,7 +36,8 @@ const useSignUpForm = (callback) => {
     return {
       handleSubmit,
       handleInputChange,
-      inputs
+      inputs,
+      Submitted
     };
   }
 export default useSignUpForm;

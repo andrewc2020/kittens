@@ -2,7 +2,7 @@ import React from 'react';
 import useSignUpForm from './CustomHooks';
 const Signup = () => {
   
-  const {inputs, handleInputChange, handleSubmit} = useSignUpForm(Signup);
+  const {inputs, handleInputChange, handleSubmit, Submitted} = useSignUpForm(Signup);
   
    
           
@@ -29,6 +29,8 @@ const Signup = () => {
     <input type="password" name="password2" onChange={handleInputChange} value={inputs.password2}/>
   </div>
   <button type="submit"  >Sign Up</button>
+<div><label>{Submitted?"Welcome Aboard!":""}</label></div>
+
 </form>
 }
 export default Signup;
