@@ -1,6 +1,6 @@
 import React from 'react';
 import useSignUpForm from './CustomHooks';
-const Signup = () => {
+export default function Signup(){
   
   const {inputs, handleInputChange, handleSubmit, Submitted} = useSignUpForm(Signup);
   
@@ -33,4 +33,4 @@ const Signup = () => {
 
 </form>
 }
-export default Signup;
+ 
