@@ -1,5 +1,5 @@
-import Layout from '../components/MyLayout';
-import CatList from '../components/CatList';
+import Layout from '~/components/MyLayout';
+import CatList from '~/components/CatList';
 
 
 

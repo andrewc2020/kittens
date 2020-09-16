@@ -1,5 +1,7 @@
 import React from 'react';
+
 import useSignUpForm from './CustomHooks';
+
 export default function Signup(){
   
   const {inputs, handleInputChange, handleSubmit, Submitted} = useSignUpForm(Signup);

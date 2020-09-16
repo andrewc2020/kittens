@@ -1,4 +1,4 @@
-import data from '../cats.json'
+import data from './cats.json'
 
 export default(req,res) =>{
    

@@ -1,5 +1,5 @@
-import KittensList from '../components/kittenList'
-import Layout from '../components/MyLayout'
+import KittensList from '~/components/kittenList'
+import Layout from '~/components/MyLayout'
 
 
 

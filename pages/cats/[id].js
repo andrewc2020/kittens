@@ -1,7 +1,7 @@
 
-import Layout from '../../components/MyLayout'
-import getCat from '../api/_cat'
-import KittenList from '../../components/kittenList'
+import Layout from '~/components/MyLayout'
+import getCat from '~/pages/api/_cat'
+import KittenList from '~/components/kittenList'
 
 
 

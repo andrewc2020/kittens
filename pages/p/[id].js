@@ -1,6 +1,6 @@
-import Layout from '../../components/MyLayout'
-import getKitten from '../api/_kitten'
-import getCat from '../api/_cat';
+import Layout from '~/components/MyLayout'
+import getKitten from '~/pages/api/_kitten'
+import getCat from '~/pages/api/_cat';
 import Link from 'next/link';
 
 

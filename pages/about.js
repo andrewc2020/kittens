@@ -1,4 +1,4 @@
-import Layout from '../components/MyLayout.js'
+import Layout from '~/components/MyLayout.js'
 import React, { useState, useEffect } from 'react';
 
 export default function About() {
