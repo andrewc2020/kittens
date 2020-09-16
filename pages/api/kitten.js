@@ -1,4 +1,4 @@
-import data from 'kittens.json'
+import data from './kittens.json'
 export default (req, res) => {
     const { id } = req.query;
     let kitten = {}
