@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "heroku" : "next start -p $PORT"
+    "start": "next start -p $PORT"
+    
   },
   "dependencies": {
     "next": "9.5.3",
