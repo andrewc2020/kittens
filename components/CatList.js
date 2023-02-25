@@ -24,7 +24,7 @@ export default function CatList(props) {
          {data && data.cats && data.cats.map(cat => (
            <li key={cat._id}>
              <Link href="/cats/[id]" as={`/cats/${cat.id}`}>
-               <a>{cat.name}</a>
+               {cat.name}
              </Link>
              
            </li>

@@ -13,7 +13,7 @@ const Kitten = props => (
   <Layout>
     <h1>{props.show && props.show.name}</h1>
     <h3>Mother :  <Link href="/cats/[id]" as={`/cats/${props.cat.id}`}>
-            <a>{props.cat.name}</a>
+            {props.cat.name}
           </Link> </h3>
     
     
