@@ -10,14 +10,14 @@ export default function Header() {
     <div>
      
       <link href="//netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
-      <Link href="/">
-        <a style={linkStyle}>Home</a>
+      <Link href="/" style={linkStyle}>
+        Home
       </Link>
-      <Link href="/cats">
-        <a style={linkStyle}>Cats</a>
+      <Link href="/cats" style={linkStyle}>
+        Cats
       </Link>
-      <Link href="/about">
-        <a style={linkStyle}>About</a>
+      <Link href="/about" style={linkStyle}>
+        About
       </Link>
      
     </div>

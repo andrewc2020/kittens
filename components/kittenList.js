@@ -17,7 +17,7 @@ export default function KittenList(props){
       {data && data && data.map(kitten => (
         <li key={kitten._id}>
           <Link href="/p/[id]" as={`/p/${kitten._id}`}>
-            <a>{kitten.name}</a>
+            {kitten.name}
           </Link>
           
         </li>
