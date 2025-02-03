@@ -31,4 +31,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 upgraded to remove a links as children of Link
 upgraded to use node 22
-upgrade to latest next
+upgrade to latest next version
